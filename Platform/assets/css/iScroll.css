@@ -1,0 +1,145 @@
+.iScrollHorizontalScrollbar {
+	position: absolute;
+	z-index: 9999;
+	height: 16px;
+	left: 2px;
+	right: 2px;
+	bottom: 2px;
+	overflow: hidden;
+}
+
+.iScrollHorizontalScrollbar.iScrollBothScrollbars {
+	right: 18px;
+}
+
+.iScrollVerticalScrollbar {
+	position: absolute;
+	z-index: 9999;
+	width: 16px;
+	bottom: 2px;
+	top: 2px;
+	right: 2px;
+	overflow: hidden;
+}
+
+.iScrollVerticalScrollbar.iScrollBothScrollbars {
+	bottom: 18px;
+}
+
+.iScrollIndicator {
+	position: absolute;
+	background: #cc3f6e;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #EB97B4 #7C2845 #7C2845 #EB97B4;
+	border-radius: 8px;
+}
+
+.iScrollHorizontalScrollbar .iScrollIndicator {
+	height: 100%;
+	background: -moz-linear-gradient(left,  #cc3f6e 0%, #93004e 100%);
+	background: -webkit-linear-gradient(left,  #cc3f6e 0%,#93004e 100%);
+	background: -o-linear-gradient(left,  #cc3f6e 0%,#93004e 100%);
+	background: -ms-linear-gradient(left,  #cc3f6e 0%,#93004e 100%);
+	background: linear-gradient(to right,  #cc3f6e 0%,#93004e 100%);
+}
+
+.iScrollVerticalScrollbar .iScrollIndicator {
+	width: 100%;
+	background: -moz-linear-gradient(top, #cc3f6e 0%, #93004e 100%);
+	background: -webkit-linear-gradient(top,  #cc3f6e 0%,#93004e 100%);
+	background: -o-linear-gradient(top, #cc3f6e 0%,#93004e 100%);
+	background: -ms-linear-gradient(top, #cc3f6e 0%,#93004e 100%);
+	background: linear-gradient(to bottom,  #cc3f6e 0%,#93004e 100%);
+}
+#iscroll_wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 230px;
+	bottom:60px;
+	right: 15px;
+	width: 95%;
+	overflow: hidden;
+}
+#scroller {
+	position: absolute;
+	z-index: 1;
+	/*-webkit-tap-highlight-color: rgba(0,0,0,0);*/
+	width: 125%;
+	padding-right:35%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+
+.scroll, .scroll .scroll-content {
+  overflow: hidden;
+  position: relative;
+}
+.scroll.large, .scroll .scroll-content.large {
+  height: 530px;
+}
+.scroll.height350x, .scroll .scroll-content.height350x {
+  min-height: 350px;
+}
+
+.scroll .scroll-content {
+  padding-right: 0;
+}
+
+.scroll .scroll-gap {
+  margin-right: 15px;
+}
+
+.scroll > .track {
+  height: 98%;
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0px;
+  display: block;
+  overflow: hidden;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #ddd;
+}
+.scroll > .track > .bar {
+  background: #7a7a7a;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.1);
+  padding: 5px 3px;
+  position: relative;
+  display: block;
+  border: 1px solid #606060;
+}
+.scroll.scroll-shadow {
+  -webkit-box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scroll .scroll-content.scroll-dropdown {
+  padding-right: 0 !important;
+  margin-right: -20px;
+}

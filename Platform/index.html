@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>Title</title>
+
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<link href="assets/css/bootstrap.css" rel="stylesheet"/>
+		<link href="assets/css/start.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/media.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.css">
+	</head>
+
+	<body>
+		<div class="video-container">
+			<video class="intro-video" width="100%" height="100%" autoplay loop>
+				<source src="assets/Home-Screen-Only.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			<div class="logo-div">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-md-push-3">
+							<img src="assets/Evobrix-Lego-Home-Screen.png" class="evobrix-logo" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-push-4 text-center">
+							<a class="btn btn-primary home-nav-btn" href="bricks.html">Build Your Platform</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-push-4 text-center">
+							<a class="btn btn-primary home-nav-btn takedemo-btn" href="../LaunchDemo/index.html">Take me to a Demo</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-push-4 text-center">
+							<a class="btn btn-primary home-nav-btn takedemo-btn autobuild-btn" href="../AutoPlay/index.html" >Auto Play</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modularity-img">
+			<img src="assets/img/ModularityatWork.png" />
+		</div>
+
+		<!-- JS File -->
+
+		<script type="text/javascript" src="assets/js/jquery.js"></script>
+		
+		<script>
+			$(function() {
+				$('.space-container').height($(window).height());
+				$(window).on('resize', function() {
+					$('.space-container').height($(window).height());
+				});
+			});
+		</script>
+
+	</body>
+</html>
